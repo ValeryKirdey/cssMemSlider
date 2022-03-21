@@ -5,13 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
     <title>CSS MEMS SLIDER</title>
 </head>
 
 <body>
-
+    <div class="container">
+        <header class="header">
+            <!-- <img src="./img/logo.jpeg" width="5%" alt="logo"> -->
+            <img src="./img/nav.jpg" width="19%" alt="nav img">
+        </header>
+        <main class="main">
+            <div class="carousel">
+                <input type="radio" id="slide-1" name="slides" value="slide-1" checked/>
+                <input type="radio" id="slide-2" name="slides" value="slide-2" />
+                <input type="radio" id="slide-3" name="slides" value="slide-3" />
+                <input type="radio" id="slide-4" name="slides" value="slide-4" />
+                <div class="slides">
+                    <div class="slides-container">
+                        <div class="slide slide1"><img src="./img/1.gif" alt="slide1" /></div>
+                        <div class="slide slide2"><img src="./img/5.gif" alt="slide2" /></div>
+                        <div class="slide slide3"><img src="./img/2.jpeg" alt="slide3" /></div>
+                        <div class="slide slide4"><img src="./img/3.jpeg" alt="slide4" /></div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="text"></div>
+                    <div class="bullets">
+                        <label for="slide-1" class="slide-1 bullet"></label>
+                        <label for="slide-2" class="slide-2 bullet"></label>
+                        <label for="slide-3" class="slide-3 bullet"></label>
+                        <label for="slide-4" class="slide-4 bullet"></label>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__rights">2022 &copy; All rights reserved</div>
+            <div class="rs">
+                <a href="https://rs.school/" target="_blank">The Rolling Scopes</a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/valerykirdey" target="_blank">Github</a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

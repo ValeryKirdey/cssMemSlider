@@ -1,3 +1,252 @@
 body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
     background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 80%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides-container {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    margin: 0px;
+    transition: 0.2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 450px;
+}
+
+.carousel input[type=radio] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.carousel input[type=radio]:checked+.bullet {
+    background: black;
+}
+
+.controls {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bullets {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 100%;
+    align-items: center;
+}
+
+.bullet {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 8px solid #fff;
+    outline: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.bullet:before {
+    content: "";
+    border: 20px solid transparent;
+    width: 40px;
+    height: 40px;
+    left: -25px;
+    top: -20px;
+    position: fixed;
+}
+
+.bullet:hover {
+    background: black;
+}
+
+#slide-1:checked~.controls>.bullets>label:nth-of-type(1),
+#slide-2:checked~.controls>.bullets>label:nth-of-type(2),
+#slide-3:checked~.controls>.bullets>label:nth-of-type(3),
+#slide-4:checked~.controls>.bullets>label:nth-of-type(4) {
+    background: black;
+    transform: scale(1);
+    cursor: default;
+}
+
+#slide-1:checked~.slides>.slides-container>.slide1 {
+    margin-left: 0%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+#slide-2:checked~.slides>.slides-container>.slide1 {
+    margin-left: -25%;
+    transition: 0.2s;
+}
+
+#slide-3:checked~.slides>.slides-container>.slide1 {
+    margin-left: -50%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+#slide-4:checked~.slides>.slides-container>.slide1 {
+    margin-left: -75%;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+@keyframes show1 {
+    0% {
+        margin-left: -500%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes show2 {
+    0% {
+        margin-left: -500%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes show3 {
+    0% {
+        margin-left: -500%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes show4 {
+    0% {
+        margin-left: -500%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+#slide-1:checked~.controls>.text::after {
+    content: "It is you again?";
+    animation: show1 0.2s;
+    color: black;
+    -webkit-animation: show1 0.2s;
+}
+
+#slide-2:checked~.controls>.text::after {
+    content: "Please don't you again! Noooooo";
+    animation: show2 0.2s;
+    color: black;
+    -webkit-animation: show2 0.2s;
+}
+
+#slide-3:checked~.controls>.text::after {
+    content: "Again and again!";
+    animation: show3 0.2s;
+    color: black;
+    -webkit-animation: show3 0.2s;
+}
+
+#slide-4:checked~.controls>.text::after {
+    content: "All of time...";
+    animation: show4 0.2s;
+    color: black;
+    -webkit-animation: show4 0.2s;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    /* border-top: 1px solid #000; */
+    height: 60px;
+    font-size: 14px;
+}
+
+.footer__rights {
+    color: black;
+}
+
+.rs a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.github a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        height: 150px;
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+    .slides {
+        max-height: 100%;
+    }
+    .footer {
+        font-size: 18px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
