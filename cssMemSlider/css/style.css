@@ -189,21 +189,21 @@ body {
 }
 
 #slide-2:checked~.controls>.text::after {
-    content: "Please don't you again! Noooooo";
+    content: "NO GOD! PLEASE NO!!! NOOOOOOOOOO";
     animation: show2 0.2s;
     color: black;
     -webkit-animation: show2 0.2s;
 }
 
 #slide-3:checked~.controls>.text::after {
-    content: "Again and again!";
+    content: "My condition all the time!";
     animation: show3 0.2s;
     color: black;
     -webkit-animation: show3 0.2s;
 }
 
 #slide-4:checked~.controls>.text::after {
-    content: "All of time...";
+    content: "...and so every time";
     animation: show4 0.2s;
     color: black;
     -webkit-animation: show4 0.2s;
