@@ -182,14 +182,14 @@ body {
 }
 
 #slide-1:checked~.controls>.text::after {
-    content: "It is you again?";
+    content: "NO GOD! PLEASE NO!!! NOOOOOOOOOO";
     animation: show1 0.2s;
     color: black;
     -webkit-animation: show1 0.2s;
 }
 
 #slide-2:checked~.controls>.text::after {
-    content: "NO GOD! PLEASE NO!!! NOOOOOOOOOO";
+    content: "It's you again?";
     animation: show2 0.2s;
     color: black;
     -webkit-animation: show2 0.2s;
