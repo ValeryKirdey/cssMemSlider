@@ -64,6 +64,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #000;
 }
 
 .bullets {
@@ -196,14 +197,14 @@ body {
 }
 
 #slide-3:checked~.controls>.text::after {
-    content: "My condition all the time!";
+    content: "Don't close your eyes if you are a real man!";
     animation: show3 0.2s;
     color: black;
     -webkit-animation: show3 0.2s;
 }
 
 #slide-4:checked~.controls>.text::after {
-    content: "...and so every time";
+    content: "My condition all the time!";
     animation: show4 0.2s;
     color: black;
     -webkit-animation: show4 0.2s;
@@ -211,10 +212,10 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
-    /* border-top: 1px solid #000; */
+    /* width: 41%; */
+    gap: 140px;
     height: 60px;
     font-size: 14px;
 }
@@ -245,8 +246,9 @@ body {
         max-height: 100%;
     }
     .footer {
-        font-size: 18px;
+        /* font-size: 14px; */
         flex-wrap: wrap;
         gap: 20px;
+        width: 80%;
     }
 }
