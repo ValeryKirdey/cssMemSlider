@@ -212,9 +212,8 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    /* width: 80%; */
     gap: 140px;
     height: 60px;
     font-size: 14px;
@@ -246,8 +245,8 @@ body {
         max-height: 100%;
     }
     .footer {
-        font-size: 18px;
         flex-wrap: wrap;
         gap: 20px;
+        width: 80%;
     }
 }
